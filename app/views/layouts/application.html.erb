@@ -10,8 +10,30 @@
   </head>
 
   <body>
-    i think the header goes here
+    <header>
+        <div>
+          <%= image_tag("icon-logo-header.png", {height: "23", alt: "Orange Review Logo", class: "head-logo"}) %>
+          Orange Review
+        </div>
+        <nav>
+          <a href="#">Topics</a>
+          <a href="#">Tags</a>
+          <%= image_tag("icon-search-header.png", {height: "14", alt: "Magnifying Glass", class: "head-magnify-orange"}) %>
+        </nav>
+      </header>
     <%= yield %>
-    i think the footer goes here 
+    <footer
+      <div>
+        <%= image_tag("icon-logo-header.png", {height: "23", alt: "Orange Review Logo", class: "head-logo"}) %>
+
+        Orange Review
+      </div>
+      <p class="footer-tagline">
+        The Best Travel Tips
+      </p>
+      <h6 class="copyright">
+        Copyright 2018, Build Carolina.
+      </h6>
+    </footer>
   </body>
 </html>
