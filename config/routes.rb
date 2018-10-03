@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+  get 'posts/show'
   get 'pages/about'
   get 'pages/partners'
   get 'pages/search'
