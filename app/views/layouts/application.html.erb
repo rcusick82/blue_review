@@ -4,7 +4,7 @@
     <title>Blue Review</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500|Alegreya:400,500,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,21 +12,21 @@
   <body>
     <header>
         <div>
-          <%= image_tag("icon-logo-header.png", {height: "23", alt: "Orange Review Logo", class: "head-logo"}) %>
-          Orange Review
+          <%= image_tag("icon-logo2.png", {height: "23", alt: "Blue Review Logo", class: "head-logo"}) %>
+          Blue Review
         </div>
         <nav>
           <a href="#">Topics</a>
           <a href="#">Tags</a>
-          <%= image_tag("icon-search-header.png", {height: "14", alt: "Magnifying Glass", class: "head-magnify-orange"}) %>
+          <%= image_tag("icon-search-header.png", {height: "14", alt: "Magnifying Glass", class: "head-magnify-blue"}) %>
         </nav>
       </header>
     <%= yield %>
     <footer>
       <div>
-        <%= image_tag("icon-logo-header.png", {height: "23", alt: "Orange Review Logo", class: "head-logo"}) %>
+        <%= image_tag("icon-logo-header2.png", {height: "23", alt: "Blue Review Logo", class: "head-logo"}) %>
 
-        Orange Review
+        Blue Review
       </div>
       <p class="footer-tagline">
         The Best Travel Tips
