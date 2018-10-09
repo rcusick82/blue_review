@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def results
+
   end
 
   def home
