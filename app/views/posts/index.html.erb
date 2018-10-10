@@ -1,4 +1,4 @@
-<% Post.all.each do |x| %>
+<% @posts.each.with_index(1) do |x, index| %>
    <section class="search-results">
      <div class="search-results-container-centered">
        <div class="search-results-img-container">
@@ -20,4 +20,19 @@
        </div>
      </div>
    </section>
+   <% if (index) % 3 == 0 %>
+   <div class="ad-horiz-background">
+     <div class="ad-horiz-container-centered">
+       <section class="ad-horiz-img-container">
+         <div class="ad-horiz-text-container">
+           <p class="ad-horiz">Top Best List of Restaurants at Your Destination
+           </p>
+           <button class="button-opaque">
+           Learn More
+           </button>
+         </div>
+       </section>
+     </div>
+   </div>
+   <% end  %>
 <% end %>
