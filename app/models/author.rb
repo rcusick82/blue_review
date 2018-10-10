@@ -1,3 +1,4 @@
 class Author < ApplicationRecord
-  has_many :posts
+  has_many :post_authors
+  has_many :posts, through: :post_authors
 end

@@ -1,0 +1,6 @@
+<h2>Add New Author</h2>
+<%= form_for @author, url: {action: "create"} do |f| %>
+  Name:<%= f.text_field :name %>
+  Tags:
+  <%= f.submit "Create" %>
+<% end %>

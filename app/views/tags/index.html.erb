@@ -1,0 +1,6 @@
+<p class="tag-spacing"><b>Tags Index:</b></p>
+<% Tag.all.sort_by(&:name).each do |x| %>
+  <h2
+    class="tag-spacing" ><a href='<%= tag_url(x.id)%>'> <%= x.name %></a>
+  </h2>
+<% end %>

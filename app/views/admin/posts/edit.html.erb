@@ -1,0 +1,11 @@
+<%= form_for @post, url: {action: "update"} do |f| %>
+  <h3>Title:<%= f.text_field :title %></h3>
+  <h3>Author:</h3>
+  <%= f.select :authors, Author.all.order(:name).collect {|x| [x.name, x.id]}, {prompt: 'Select Author'} %>
+  <h3>Tags:</h3>
+  <%= f.collection_check_boxes(:tag_ids, Tag.order(:name).all, :id, :name, {include_hidden: false}) %>
+  <h3>Body:</h3>
+  <%= f.text_area :body %>
+  <br>
+  <%= f.submit "Update" %>
+<% end %>

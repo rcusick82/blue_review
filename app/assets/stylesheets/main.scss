@@ -1,4 +1,4 @@
-// Place all the styles related to the Pages controller here.
+  // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -29,6 +29,10 @@ footer {
   height: 145px;
   line-height: 60px;
   margin: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
  }
 
 .footer-tagline {
@@ -319,6 +323,14 @@ figcaption {
   border-top: 1px solid #d8d8d8;
   margin: 0 auto;
   width: 750px;
+}
+
+h2.tag-spacing, p.tag-spacing {
+ font-size: 25px;
+ margin: 8px;
+ height: 35px;
+
+
 }
 
 /*IMAGES-ICONS*/
@@ -1061,3 +1073,42 @@ margin: 0 auto;
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.show-img-container {
+  background-image: image-url('article-1.png');
+  background-size: cover;
+  display: inline-block;
+  width: 230px;
+  height: 170px;
+  vertical-align: top;
+
+}
+.show-book h1{
+  display: inline-block;
+  width: 600px;
+  padding: 0;
+}
+
+.show-book {
+  display: inline-block;
+  width: 600px;
+  margin-left: 30px;
+}
+.width-show-book {
+  width: 600px;
+}
+
+.show-view-container {
+  margin: 0 auto;
+  width: 900px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+// .search-results-img-container {
+//   background-image: image-url('article-1.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   display: inline-block;
+//   height: 170px;
+//   margin: 56px 42px 78px 188px;
+//   width: 230px;

@@ -1,0 +1,4 @@
+<% Author.all.each do |x| %>
+  <h2> <a href='<%= author_url(x.id)%>'> <%= x.name %>
+  </h2></a>
+<% end %>

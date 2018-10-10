@@ -1,0 +1,8 @@
+<h1><%= @tag.name %></h1>
+<ul>
+	<% @tag.posts.each do |x| %>
+	<li> <%= x.title %></li>
+	<% end %>
+</ul>
+
+<!-- For each tag, do an unordered list item with the title of what this is -->
