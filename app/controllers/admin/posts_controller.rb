@@ -20,6 +20,7 @@ class Admin::PostsController < ApplicationController
     @post = Post.find params[:id]
     @post.title = params[:post][:title]
     @post.body = params[:post][:body]
+    @post.tags = Tag.find(params[:post][:tags])
     @post.save
     redirect_to posts_path
   end
