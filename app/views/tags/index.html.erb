@@ -1,4 +1,5 @@
-<%= Tag.all.each do |x| %>
-         <h2> <a href='<%= tag_url(x.id)%>'> <%= x.name %>
-         </h2></a>
+<% Tag.all.each do |x| %>
+  <h2>
+    <a href='<%= tag_url(x.id)%>'> <%= x.name %></a>
+  </h2>
 <% end %>
