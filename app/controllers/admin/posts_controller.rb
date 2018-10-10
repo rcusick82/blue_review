@@ -8,7 +8,7 @@ class Admin::PostsController < ApplicationController
   end
 
   def create
-    Post.create(title:params[:post][:title], body:params[:post][:body])
+    Post.create(title:params[:post][:title], body:params[:post][:body], tags:Tag.find(params[:post][:tags]))
     redirect_to posts_path
   end
 
