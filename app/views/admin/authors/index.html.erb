@@ -1,4 +1,7 @@
 <% Author.all.each do |x| %>
-  <h2> <a href='<%= author_url(x.id)%>'> <%= x.name %>
+  <h2>
+    <a href='<%= url_for edit_admin_author_url(x.id) %>'><button>Edit</button></a>
+    <%= button_to "X", admin_author_url(x.id), method: :delete %>
+   <a href='<%= author_url(x.id)%>'> <%= x.name %>
   </h2></a>
 <% end %>

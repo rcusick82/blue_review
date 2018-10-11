@@ -1,5 +1,7 @@
 <%= Post.all.each do |x| %>
    <section class="search-results">
+    <a href='<%= url_for edit_admin_post_url(x.id) %>'><button>Edit</button></a>
+    <%= button_to "X", admin_post_url(x.id), method: :delete %>
      <div class="search-results-container-centered">
        <div class="search-results-img-container">
          <button class="button-opaque-lg-txt">Read More

@@ -26,7 +26,7 @@ class Admin::AuthorsController < ApplicationController
 
   def destroy
     Author.find(params[:id]).delete
-    redirect_to author_path
+    redirect_to admin_authors_path
   end
 
 end
