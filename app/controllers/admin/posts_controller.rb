@@ -25,4 +25,9 @@ class Admin::PostsController < ApplicationController
     @post.save
     redirect_to posts_path
   end
+
+  def destroy
+    Post.find(params[:id]).delete
+    redirect_to posts_path
+  end
 end
