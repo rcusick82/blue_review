@@ -9,7 +9,7 @@ class Admin::TagsController < ApplicationController
 
   def create
     Tag.create(name:params[:tag][:name])
-    redirect_to tags_path
+    redirect_to admin_tags_path
   end
 
   def edit
@@ -21,7 +21,7 @@ class Admin::TagsController < ApplicationController
     @tag.name = params[:tag][:name]
     # @tag.body = params[:tag][:body]
     @tag.save
-    redirect_to tags_path
+    redirect_to admin_tags_path
   end
 
   def destroy

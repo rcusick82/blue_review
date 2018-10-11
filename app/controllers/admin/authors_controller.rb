@@ -9,7 +9,7 @@ class Admin::AuthorsController < ApplicationController
 
   def create
     Author.create(name:params[:author][:name]) #body:params[:post][:body])
-    redirect_to authors_path
+    redirect_to admin_authors_path
   end
 
   def edit
@@ -21,7 +21,7 @@ class Admin::AuthorsController < ApplicationController
     @author.name = params[:author][:name]
     # @author.body = params[:author][:name]
     @author.save
-    redirect_to authors_path
+    redirect_to admin_authors_path
   end
 
   def destroy

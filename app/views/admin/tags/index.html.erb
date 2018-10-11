@@ -1,8 +1,9 @@
+<div class="admin-view">
 <p class="tag-spacing"><b>Tags Index:</b></p>
 <% Tag.all.sort_by(&:name).each do |x| %>
-  <a href='<%= url_for edit_admin_tag_url(x.id) %>'><button>Edit</button></a>
-  <%= button_to "X", admin_tag_url(x.id), method: :delete, form_class: 'admin-button' %>
-  <h2
-    class="tag-spacing" ><a href='<%= tag_url(x.id)%>'> <%= x.name %></a>
+  <%= button_to "X", admin_tag_url(x.id), method: :delete%>
+  <a href='<%= url_for edit_admin_tag_url(x.id) %>'><button class='admin-button'>Edit</button></a>
+  <h2 class="tag-spacing" ><a href='<%= tag_url(x.id)%>'> <%= x.name %></a>
   </h2>
 <% end %>
+</div>
