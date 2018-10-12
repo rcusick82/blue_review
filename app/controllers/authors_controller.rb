@@ -1,8 +1,8 @@
-class AuthorsController < ApplicationController
+class UsersController < ApplicationController
   def index
   end
 
   def show
-    @author = Author.find params[:id]
+    @author = User.find params[:id]
   end
 end

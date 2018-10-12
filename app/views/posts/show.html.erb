@@ -4,7 +4,7 @@
 
   <div class="show-book">
     <h1 class="width-show-book"><%= @post.title %></h1>
-    <p class="p-author"><% @post.authors.each do |x| %>
+    <p class="p-author"><% @post.users.each do |x| %>
       <%=x.name %>
       <% end %></p>
     <p class="p-tags"><% @post.tags.each do |x| %>
